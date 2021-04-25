@@ -1,0 +1,106 @@
+:root {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  font-size: 1.5em;
+  width: 100vw;
+}
+
+nav {
+  width: 30%;
+  font-size: 1.2em;
+  border-right: 1px solid black;
+  position: fixed;
+  height: 100%;
+}
+
+a {
+  display: block;
+}
+
+main {
+  width: 65%;
+  position: relative;
+  left: 30%;
+  margin-left: 20px;
+}
+
+nav,
+.nav-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-links {
+  border-top: 1px solid #000;
+}
+.nav-links,
+.nav-link {
+  width: 100%;
+}
+
+.nav-links div {
+  padding-left: 15px;
+  border-bottom: 1px solid #000;
+}
+
+.nav-link {
+  padding-bottom: 5px;
+}
+
+nav header {
+  font-size: 1.55em;
+  font-weight: bold;
+  padding: 10%;
+}
+
+main header {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.main-section {
+  margin-bottom: 20px;
+}
+
+main p {
+  margin-bottom: 10px;
+}
+
+main a {
+  display: inline;
+}
+
+code {
+  background-color: rgba(209, 209, 209, 0.5);
+}
+
+code.block {
+  width: 100%;
+  display: block;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+ul {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 900px) {
+  nav {
+    width: 20%;
+  }
+
+  main {
+    left: 20%;
+    width: 76%;
+  }
+}
